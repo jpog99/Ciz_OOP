@@ -11,21 +11,21 @@ public class Trainer extends People
     	
     }
     
-    public void showTrainerInfo()
-    {
-            System.out.println("Coach Name : " + name);
-            System.out.println("Gender : " + gender);
-            System.out.println("Age : " + age);
-            System.out.println("Phone Number  : " + phoneNum);
-            System.out.println("Address Line 1 : " + addLine1);
-            System.out.println("Address Line 2 : " + addLine2);
-            System.out.println("City : " + addCity);
-            System.out.println("State : " + addState);
-            System.out.println("Postcode : " + addPostcode);
-        
-    }
-    
+    //return name
     public String getName() {
     	return name;
     }
+
+    //defining parent's abstract function
+	public void printInfo() {
+        System.out.println("Coach Name : " + name);
+        System.out.println("Gender : " + gender);
+        System.out.println("Age : " + age);
+        System.out.println("Phone Number  : " + phoneNum);
+        System.out.println("Address Line 1 : " + addLine1);
+        System.out.println("Address Line 2 : " + addLine2);
+        System.out.println("City : " + addCity);
+        System.out.println("State : " + addState);
+        System.out.println("Postcode : " + addPostcode);
+	}
 }

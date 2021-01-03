@@ -72,6 +72,8 @@ public class PersonalBMIRecorder
         } catch (IOException | InterruptedException ex) {}
     }
     
+    
+    //main function here
     public static void main(String[] args) 
     {
         boolean retry = true;
@@ -135,20 +137,21 @@ public class PersonalBMIRecorder
             System.out.println("\n");
             System.out.println("----------RECOMMENDED TRAINER INFORMATION----------");
             
+            
             if (bmiCategory == "Underweight") {
-            	((Trainer)t1).showTrainerInfo();
+            	t1.printInfo();
             	trainers[currentPeriod] = (Trainer) t1;
             }
             else if (bmiCategory == "Normal") {
-            	((Trainer)t2).showTrainerInfo();
+            	t2.printInfo();
             	trainers[currentPeriod] = (Trainer) t2;
             }
             else if (bmiCategory == "Overweight") {
-            	((Trainer)t3).showTrainerInfo();
+            	t3.printInfo();
             	trainers[currentPeriod] = (Trainer) t3;
             }
             else if (bmiCategory == "Obese") {
-            	((Trainer)t4).showTrainerInfo();
+            	t4.printInfo();
             	trainers[currentPeriod] = (Trainer) t4;
             }
             
